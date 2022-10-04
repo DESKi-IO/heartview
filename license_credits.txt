@@ -1,0 +1,359 @@
+Third-party software packages used by DESKi HeartView
+
+JsonCpp
+Version: 1.9.5
+Copyright (c) 2007-2010 Baptiste Lepilleur and The JsonCpp Authors
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+OpenCV
+Version: 4.5.5
+License: Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+Copyright (C) 2000-2021, Intel Corporation, all rights reserved.
+Copyright (C) 2009-2011, Willow Garage Inc., all rights reserved.
+Copyright (C) 2009-2016, NVIDIA Corporation, all rights reserved.
+Copyright (C) 2010-2013, Advanced Micro Devices, Inc., all rights reserved.
+Copyright (C) 2015-2021, OpenCV Foundation, all rights reserved.
+Copyright (C) 2008-2016, Itseez Inc., all rights reserved.
+Copyright (C) 2019-2021, Xperience AI, all rights reserved.
+Copyright (C) 2019-2021, Shenzhen Institute of Artificial Intelligence and
+                         Robotics for Society, all rights reserved.
+
+Third party copyrights are property of their respective owners.
+
+
+libpng
+Copyright (c) 1995-2019 The PNG Reference Library Authors.
+Copyright (c) 2018-2019 Cosmin Truta.
+Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.
+Copyright (c) 1996-1997 Andreas Dilger.
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+Version: 1.6.37
+License: PNG Reference Library License version 2, http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
+
+spdlog
+Version: 1.9.2
+The MIT License (MIT)
+
+Copyright (c) 2016 Gabi Melman.                                       
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+fmt
+Version: 8.1.1
+Copyright (c) 2012 - present, Victor Zverovich
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+TensorFlowLite
+Version: 2.6.3
+License: https://raw.githubusercontent.com/tensorflow/tensorflow/v2.6.3/LICENSE
+
+COPYRIGHT
+
+All contributions by the University of California:
+
+Copyright (c) 2014, The Regents of the University of California (Regents)
+All rights reserved.
+
+All other contributions:
+
+Copyright (c) 2014, the respective contributors
+All rights reserved.
+
+Caffe uses a shared copyright model: each contributor holds copyright over
+their contributions to Caffe. The project versioning records all such
+contribution and copyright details. If a contributor wants to further mark
+their specific copyright on a particular contribution, they should indicate
+their copyright solely in the commit message of the change when it is
+committed.
+
+LICENSE
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+   WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+   DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+   ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+   (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+   LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+   ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+compute_library
+Copyright (c) 2017-2021 Arm Limited
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+hexagon
+Version:1.20.0.2
+Copyright (c) 2016-2019, The Linux Foundation. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted (subject to the limitations in the
+disclaimer below) provided that the following conditions are met:
+
+  Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+
+  Redistributions in binary form must reproduce the above
+     copyright notice, this list of conditions and the following
+     disclaimer in the documentation and/or other materials provided
+     with the distribution.
+
+  Neither the name of The Linux Foundation nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE
+GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT
+HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+zlib
+Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
+Version: 1.2.11
+License: https://www.zlib.net/zlib_license.html
+http://www.zlib.net/
+
+ippicv and ippiw
+Intel Simplified Software License (Version April 2018)
+
+Copyright (c) 2018 Intel Corporation.
+
+Use and Redistribution.  You may use and redistribute the software (the
+"Software"), without modification, provided the following conditions are met:
+
+* Redistributions must reproduce the above copyright notice and the following
+  terms of use in the Software and in the documentation and/or other materials
+  provided with the distribution.
+* Neither the name of Intel nor the names of its suppliers may be used to
+  endorse or promote products derived from this Software without specific prior
+  written permission.
+* No reverse engineering, decompilation, or disassembly of this Software is
+  permitted.
+
+Limited patent license.  Intel grants you a world-wide, royalty-free,
+non-exclusive license under patents it now or hereafter owns or controls to
+make, have made, use, import, offer to sell and sell ("Utilize") this Software,
+but solely to the extent that any such patent is necessary to Utilize the
+Software alone. The patent license shall not apply to any combinations which
+include this software. No hardware per se is licensed hereunder.
+
+Third party and other Intel programs.  "Third Party Programs" are the files
+listed in the "third-party-programs.txt" text file that is included with the
+Software and may include Intel programs under separate license terms. Third
+Party Programs, even if included with the distribution of the Materials, are
+governed by separate license terms and those license terms solely govern your
+use of those programs.
+
+DISCLAIMER.  THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT ARE
+DISCLAIMED. THIS SOFTWARE IS NOT INTENDED FOR USE IN SYSTEMS OR APPLICATIONS
+WHERE FAILURE OF THE SOFTWARE MAY CAUSE PERSONAL INJURY OR DEATH AND YOU AGREE
+THAT YOU ARE FULLY RESPONSIBLE FOR ANY CLAIMS, COSTS, DAMAGES, EXPENSES, AND
+ATTORNEYS' FEES ARISING OUT OF ANY SUCH USE, EVEN IF ANY CLAIM ALLEGES THAT
+INTEL WAS NEGLIGENT REGARDING THE DESIGN OR MANUFACTURE OF THE MATERIALS.
+
+LIMITATION OF LIABILITY.  IN NO EVENT WILL INTEL BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. YOU AGREE TO INDEMNIFY AND HOLD INTEL
+HARMLESS AGAINST ANY CLAIMS AND EXPENSES RESULTING FROM YOUR USE OR UNAUTHORIZED
+USE OF THE SOFTWARE.
+
+No support.  Intel may make changes to the Software, at any time without notice,
+and is not obligated to support, update or provide training for the Software.
+
+Termination.  Intel may terminate your right to use the Software in the event of
+your breach of this Agreement and you fail to cure the breach within a
+reasonable period of time.
+
+Feedback.  Should you provide Intel with comments, modifications, corrections,
+enhancements or other input ("Feedback") related to the Software Intel will be
+free to use, disclose, reproduce, license or otherwise distribute or exploit the
+Feedback in its sole discretion without any obligations or restrictions of any
+kind, including without limitation, intellectual property rights or licensing
+obligations.
+
+Compliance with laws.  You agree to comply with all relevant laws and
+regulations governing your use, transfer, import or export (or prohibition
+thereof) of the Software.
+
+Governing law.  All disputes will be governed by the laws of the United States
+of America and the State of Delaware without reference to conflict of law
+principles and subject to the exclusive jurisdiction of the state or federal
+courts sitting in the State of Delaware, and each party agrees that it submits
+to the personal jurisdiction and venue of those courts and waives any
+objections. The United Nations Convention on Contracts for the International
+Sale of Goods (1980) is specifically excluded and will not apply to the
+Software.
+
+*Other names and brands may be claimed as the property of others.
+
+neon_2_sse
+created by Victoria Zhislina, the Senior Application Engineer, Intel Corporation,  victoria.zhislina@intel.com
+
+*** Copyright (C) 2012-2020 Intel Corporation.  All rights reserved.
+
+IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
+
+By downloading, copying, installing or using the software you agree to this license.
+If you do not agree to this license, do not download, install, copy or use the software.
+
+                             License Agreement
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+ * The name of the copyright holders may not be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+This software is provided by the copyright holders and contributors "as is" and
+any express or implied warranties, including, but not limited to, the implied
+warranties of merchantability and fitness for a particular purpose are disclaimed.
+In no event shall the Intel Corporation or contributors be liable for any direct,
+indirect, incidental, special, exemplary, or consequential damages
+(including, but not limited to, procurement of substitute goods or services;
+loss of use, data, or profits; or business interruption) however caused
+and on any theory of liability, whether in contract, strict liability,
+or tort (including negligence or otherwise) arising in any way out of
+the use of this software, even if advised of the possibility of such damage.
+
+
+Eigen
+Copyright (c) Eigen Team
+Version: 3.3.7
+License: MPL-2, http://eigen.tuxfamily.org/index.php?title=Main_Page#License
+https://eigen.tuxfamily.org
+
+farmhash
+Copyright (c) 2014 Google, Inc.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+flatbuffers
+Copyright 2014 Google Inc. All rights reserved.
+Version 1.12.0
+License: Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+ruy
+Copyright 2019 Google LLC. All Rights Reserved.
+Version 1.12.0
+License: Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+
+fft2d
+Copyright(C) 1997,2001 Takuya OOURA (email: ooura@kurims.kyoto-u.ac.jp)
+
+abseil
+Copyright 2017 The Abseil Authors.
+License: Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
