@@ -175,6 +175,23 @@ In a user facing application, this code should not be executed on the UI/main th
 
 One may choose invoke `hv_create_raw_image_info` for each raw image as the raw image size may change. However if the raw image size is constant, calling it once before the loop is advised
 
+### Expected image format
+
+The library expects an RGB image where each channel is encoded on an unsigned 8 bits value.
+The library processes the image in order to match the underlying inference model expected image.
+It is better to provide an image that has the same ratio as the underlying inference model expected image.
+
+Here is a code snippet that demonstrates how to create a compatible image with the library:
+```C++
+    hv_create_raw_image_info(engine, 512, 640,
+                                     kHvImageFormat_RGB_8UC3, 640 * 3,
+                                     &info)
+    cv::Mat cvimg(512, 640, CV_8UC3);
+    cv::randu(cvimg, cv::Scalar(0, 0, 0), cv::Scalar(255, 255, 255));
+    // assume cvimg.isContinuous() returns true
+    hv_create_image(engine, info, cvimg.data, &image);
+```
+
 ### Cleanup HeartView engine
 
 Final step is pretty simple:
