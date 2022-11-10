@@ -4,7 +4,7 @@ Copyright (c) 2021-2022 DESKi SAS. All Rights Reserved.
 
 ## Overview
 
-The HeartView SDK allows applications written in C99 or later or C++ to infer from a cardiac ultrasound image an echocardiographic reference view and its quality.
+The HeartView SDK allows applications written in C99 or later or C++ to infer from a Cardiac UltraSound image an echocardiographic reference view and its quality.
 
 ## Table of contents
 
@@ -13,21 +13,26 @@ The HeartView SDK allows applications written in C99 or later or C++ to infer fr
 - [Credits](#credits)
 - [HeartView SDK structure](#heartview-sdk-structure)
 - [Prepare your project to integrate HeartView APIs](#prepare-your-project-to-integrate-heartview-apis)
-  * [Compiler and linker configuration](#compiler-and-linker-configuration)
-  * [Resources](#resources)
+  - [Compiler and linker configuration](#compiler-and-linker-configuration)
+  - [Resources](#resources)
 - [Use HeartView in your project](#use-heartview-in-your-project)
-  * [Include header](#include-header)
-  * [Setup HeartView engine](#setup-heartview-engine)
-  * [Start and run HeartView engine](#start-and-run-heartview-engine)
-  * [Cleanup HeartView engine](#cleanup-heartview-engine)
+  - [Include header](#include-header)
+  - [Setup HeartView engine](#setup-heartview-engine)
+  - [Start and run HeartView engine](#start-and-run-heartview-engine)
+  - [Expected input image format](#expected-input-image-format)
+    - [Image encoding](#image-encoding)
+    - [Image size](#image-size)
+    - [UltraSound pixel region](#ultrasound-pixel-region)
+    - [Create a compatible image with the library](#create-a-compatible-image-with-the-library)
+  - [Cleanup HeartView engine](#cleanup-heartview-engine)
 
 ## Releases
 
-* SDK can be obtained upon request
+- SDK can be obtained upon request
 
 ## Supported Platforms
 
-* Windows: Tested on Windows 10
+- Windows: Tested on Windows 10
 
 ## Credits
 
@@ -36,7 +41,7 @@ The list of the corresponding license is available [here](license_credits.txt)
 
 ## HeartView SDK structure
 
-```
+```filetree
 ├── bin
 │   └── heartview.dll
 ├── include
@@ -60,9 +65,9 @@ These instructions assume that you're writing an application in C or C++ and wan
 
 ### Compiler and linker configuration
 
-* Add SDK's `include` path to the project include paths
-* Reference `lib/heartview.lib` into the project linker settings
-* Deploy `heartview.dll` along the project executable or add SDK's `bin` directory to PATH environment variable
+- Add SDK's `include` path to the project include paths
+- Reference `lib/heartview.lib` into the project linker settings
+- Deploy `heartview.dll` along the project executable or add SDK's `bin` directory to PATH environment variable
 
 ### Resources
 
@@ -117,8 +122,7 @@ Settings up the engine is done in 2 steps:
 
 ### Start and run HeartView engine
 
-The code below shows a loop infering incoming ultrasound images.
-
+The code below shows a loop infering incoming UltraSound images.
 
 ```c
     if (hv_start(engine) != kHvOk) {
@@ -167,7 +171,7 @@ The code below shows a loop infering incoming ultrasound images.
 
 `ultrasound_stream_ok`, `ultrasound_stream_get_next_image` and `signal_new_prediction` are pseudo functions to illustrate how the loop may be implemented.
 
-HeartView engine infers from echo ultrasound image that should meet the image format expected by inference runtime. In order to convert image provided to HeartView engine with `hv_create_image`, one needs to describe the format of the provided raw image with `hv_create_raw_image_info` function.
+HeartView engine infers from echo UltraSound image that should meet the [expected input image format](#expected-input-image-format). In order to convert image provided to HeartView engine with `hv_create_image`, one needs to describe the format of the provided raw image with `hv_create_raw_image_info` function. See [code snippet](#create-a-compatible-image-with-the-library)
 
 In a user facing application, this code should not be executed on the UI/main thread as it may lead the UI to be unresponsive.
 
@@ -175,13 +179,34 @@ In a user facing application, this code should not be executed on the UI/main th
 
 One may choose invoke `hv_create_raw_image_info` for each raw image as the raw image size may change. However if the raw image size is constant, calling it once before the loop is advised
 
-### Expected image format
+### Expected input image format
+
+#### Image encoding
 
 The library expects an RGB image where each channel is encoded on an unsigned 8 bits value.
-The library processes the image in order to match the underlying inference model expected image.
-It is better to provide an image that has the same ratio as the underlying inference model expected image.
+
+#### Image size
+
+The library can process an image of any size.
+
+#### UltraSound pixel region
+
+The UltraSound area center should be aligned with the input image center.
+
+There should be no margin between UltraSound area and the input image borders.
+
+Here is an example input image  (__the gray border is not expected at all__, it's just there for illustration):
+
+![UltraSound input image example](images/input_image_example.png)
+
+Here is a wrong input image:
+
+![Wrong UltraSound input image example](images/bad_input_image_example.png)
+
+#### Create a compatible image with the library
 
 Here is a code snippet that demonstrates how to create a compatible image with the library:
+
 ```C++
     hv_create_raw_image_info(engine, 512, 640,
                                      kHvImageFormat_RGB_8UC3, 640 * 3,
