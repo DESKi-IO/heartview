@@ -1,6 +1,6 @@
 # HeartView by DESKi C SDK
 
-Copyright (c) 2021-2022 DESKi SAS. All Rights Reserved.
+Copyright (c) 2021-2023 DESKi SAS. All Rights Reserved.
 
 ## Overview
 
@@ -43,7 +43,9 @@ The list of the corresponding license is available [here](license_credits.txt)
 
 ```filetree
 ├── bin
-│   └── heartview.dll
+│   ├── DirectML.dll
+│   ├── heartview.dll
+│   └── onnxruntime.dll
 ├── include
 │   └── deski
 │       └── hv
@@ -53,10 +55,14 @@ The list of the corresponding license is available [here](license_credits.txt)
 │           └── heartview_api.h
 ├── lib
 │   └── heartview.lib
-├── resources
-│   ├── inference_configuration.json
-│   └── inference_runtime.bin
-└── README.md
+└── share
+    ├── doc
+    │   └── heartview
+    │       ├── license_credits.txt
+    │       └── README.md
+    ├── trained
+        ├── config_1_thread.json.enc
+        └── model.onnx.enc
 ```
 
 ## Prepare your project to integrate HeartView APIs
@@ -67,16 +73,16 @@ These instructions assume that you're writing an application in C or C++ and wan
 
 - Add SDK's `include` path to the project include paths
 - Reference `lib/heartview.lib` into the project linker settings
-- Deploy `heartview.dll` along the project executable or add SDK's `bin` directory to PATH environment variable
+- Deploy `heartview.dll`, `onnxruntime.dll` and `DirectML.dll` along the project executable or add SDK's `bin` directory to PATH environment variable
 
 ### Resources
 
 The library binary doesn't embed any resources required to run inference.
 
-DESKi provides 2 resource files:
+A set of resources is provided:
 
-1. Inference runtime file
-1. Inference configuration file
+1. [Inference runtime file](share/trained/model.onnx.enc)
+1. [Inference configuration file](share/trained/config_1_thread.json.enc)
 
 Your application is responsible to make these resources available to the DESKi HeartView API.
 
@@ -102,8 +108,8 @@ Settings up the engine is done in 2 steps:
 ```c
     hv_configuration* configuration = nullptr;
 
-    if (hv_create_configuration("path/to/inference_runtime.bin",
-                                "path/to/inference_configuration.json",
+    if (hv_create_configuration("share/trained/model.onnx.enc",
+                                "share/trained/config_1_thread.json.enc",
                                 kHvLogDebug,
                                 &configuration) != kHvOk) {
         // Handle error;
